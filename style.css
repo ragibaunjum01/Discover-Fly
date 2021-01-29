@@ -116,6 +116,23 @@ nav ul li a:hover, a.active{
     font-weight: 500;
     background-color:  #3352F2;
 }
+.plus-btn{
+    display: block;
+    width: 25px;
+    background-color: #3352F2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.minus-btn{
+    display: block;
+    width: 25px;
+    background-color: rgb(196, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
 .amount{
     display: flex;
     justify-content: space-between;
