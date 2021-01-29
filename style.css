@@ -122,8 +122,8 @@ nav ul li a:hover, a.active{
     background-color: #3352F2;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    margin-bottom: 2px;
+    border-radius: 2px;
+    margin-bottom: 4px;
 }
 .minus-btn{
     display: block;
@@ -131,7 +131,7 @@ nav ul li a:hover, a.active{
     background-color: rgb(196, 0, 0);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 .amount{
     display: flex;
