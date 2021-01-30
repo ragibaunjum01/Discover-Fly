@@ -142,7 +142,7 @@ nav ul li a:hover, a.active{
     margin: 50px;
     
 }
-.cancel-btn{
+#cancel-btn{
     width: 50px;
     height: 25px;
     background-color: rgb(196, 0, 0);
@@ -150,7 +150,7 @@ nav ul li a:hover, a.active{
     border: none;
     border-radius: 3px;
 }
-.confirm-btn{
+#confirm-btn{
     width: 50px;
     height: 25px;
     background-color:  #3352F2;
@@ -158,4 +158,8 @@ nav ul li a:hover, a.active{
     border: none;
     border-radius: 3px;
     margin-left: 83px;
+}
+#booked{
+    display: none;
+    background-color: honeydew;
 }

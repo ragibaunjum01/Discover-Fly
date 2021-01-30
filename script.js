@@ -67,6 +67,33 @@ document.getElementById('bookButton').addEventListener('click',function(){
     // confirmTotalAmount EventListener
     calculateTotal();
 })
+function confirmationButtonHandler(button){
+    if(button == 'confirm-btn'){
+        document.getElementById('booking').style.display = "none";
+        document.getElementById('confirmation').style.display = "none";
+        document.getElementById('booked').style.display = "block";
+    }
+    else if(button == 'cancel-btn'){
+        document.getElementById('booking').style.display = "block";
+        document.getElementById('confirmation').style.display = "none";
+        document.getElementById('booked').style.display = "none";
+    }
+}
+// confirmButton EventListener
+document.getElementById('confirm-btn').addEventListener('click',function(){
+    // document.getElementById('booking').style.display = "none";
+    // document.getElementById('confirmation').style.display = "none";
+    // document.getElementById('booked').style.display = "block";
+    confirmationButtonHandler('confirm-btn');
+})
+// cancelButton EventListener
+document.getElementById('cancel-btn').addEventListener('click',function(){
+    // document.getElementById('booking').style.display = "block";
+    // document.getElementById('confirmation').style.display = "none";
+    // document.getElementById('booked').style.display = "none";
+    confirmationButtonHandler('cancel-btn')
+})
+
 
 
 
