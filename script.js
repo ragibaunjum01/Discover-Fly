@@ -47,6 +47,7 @@ document.getElementById('addFirstClass').addEventListener('click',function(){
 document.getElementById('removeFirstClass').addEventListener('click',function(){
     ticketQuantityHandler('firstClass', false);
 })
+
 // economyTicket EventListener
 document.getElementById('addEconomy').addEventListener('click',function(){
     ticketQuantityHandler('economy', true);
@@ -54,9 +55,9 @@ document.getElementById('addEconomy').addEventListener('click',function(){
 document.getElementById('removeEconomy').addEventListener('click',function(){
     ticketQuantityHandler('economy', false);
 })
+
 // bookNowButton EventListener
-document.getElementById('bookButton').addEventListener('click',function(){
-    
+document.getElementById('bookButton').addEventListener('click',function(){  
     document.getElementById('booking').style.display = "none";
     document.getElementById('confirmation').style.display = "block";
 
