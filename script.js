@@ -19,6 +19,8 @@ function calculateTotal(){
 
     const grandTotal = subTotal + tax;
     document.getElementById('grandTotal').innerText = '$' + grandTotal;
+
+    document.getElementById('confirmTicketAmount').innerText = '$' + grandTotal;
 }
 
 // ticketQuantityHandler function
@@ -52,3 +54,19 @@ document.getElementById('addEconomy').addEventListener('click',function(){
 document.getElementById('removeEconomy').addEventListener('click',function(){
     ticketQuantityHandler('economy', false);
 })
+// bookNowButton EventListener
+document.getElementById('bookButton').addEventListener('click',function(){
+    document.getElementById('booking').style.display = "none";
+    document.getElementById('confirmation').style.display = "block";
+
+    // confirmTicketCount EventListener
+    const confirmTicketInput = document.getElementById('confirmTicketCount');
+    const confirmNewTicketCount = parseInt(document.getElementById('firstClassTicketCount').value) + parseInt(document.getElementById('economyTicketCount').value);
+    document.getElementById('confirmTicketCount').innerText = confirmNewTicketCount;
+
+    // confirmTotalAmount EventListener
+    calculateTotal();
+})
+
+
+

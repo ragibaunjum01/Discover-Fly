@@ -137,3 +137,25 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+#confirmation{
+    display: none;
+    margin: 50px;
+    
+}
+.cancel-btn{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(196, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+.confirm-btn{
+    width: 50px;
+    height: 25px;
+    background-color:  #3352F2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-left: 83px;
+}

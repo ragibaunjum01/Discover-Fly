@@ -27,7 +27,7 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main id="booking" class="main-content container">
         <div class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
@@ -95,12 +95,39 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="bookButton" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
+        </div>
+    </main>
+    <section id="confirmation">
+        <div class="booking-form">
+            <h3>Booking Confirmation</h3>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Total Ticket</p>
+                    </div>
+                    <div class="right">
+                        <p id="confirmTicketCount">0</p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Total amount</p>
+                    </div>
+                    <div class="right">
+                        <p id="confirmTicketAmount">$0</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="cancel-btn">Cancel</button> <button class="confirm-btn">Confirm</button>
+            </div>
         </div>
     </section>
     <script src="script.js"></script>
